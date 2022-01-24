@@ -11,9 +11,10 @@
 
 <body>
 
-    <div class="container-fluid bg-info ">
-        <div class="card bg-success text-warning padding " style="width: 18rem;">
-            <img src="/static/register-user-register-icon.png" class="card-img-top" alt="user-registration logo">
+    <div class="container-fluid d-flex justify-content-center pt-5  ">
+        <div class="card bg-success text-warning d-flex justify-content-center " style="width: 18rem;">
+
+            <img src="/static/NAD_Logo.svg.png" class="card-img-top d-flex mt-2" alt="user-registration logo">
             <div class="card-body">
                 <h5 class="card-title">registration</h5>
                 <p class="card-text">you can register or login</p>
@@ -31,7 +32,13 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="d-flex justify-content-center p-2">
+
+                        <button type="submit" class="btn btn-primary d-flex mr-5">login</button>
+
+                        <a href="{{ url_for('user_login') }}" class="btn btn-dark">register</a>
+
+                    </div>
                 </form>
             </div>
         </div>
