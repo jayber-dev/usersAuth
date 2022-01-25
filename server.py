@@ -4,7 +4,7 @@ import flask_login
 import flask_sqlalchemy
 
 app = Flask(__name__)
-# wow wow wow
+
 
 
 @app.route('/')
