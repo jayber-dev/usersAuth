@@ -10,15 +10,15 @@
 </head>
 
 <body style="background-image: url(/static/3184128.jpg); width: 100%; height: 100%;">
-
+    <p class=""> hello</p>
     <div class="container-fluid d-flex justify-content-center pt-5  ">
-        <div class="card bg-success text-warning d-flex justify-content-center " style="width: 18rem;">
+        <div class="card text-dark d-flex justify-content-center " style="width: 18rem;">
 
-            <img src="/static/NAD_Logo.svg.png" class="card-img-top d-flex mt-2" alt="user-registration logo">
+            <img src="/static/NAD_Logo.svg.png" class="card-img-top d-flex mt-2" alt="company logo">
             <div class="card-body">
-                <h5 class="card-title">registration</h5>
-                <p class="card-text">you can register or login</p>
-                <form>
+                <h5 class="card-title d-flex justify-content-center">user login</h5>
+
+                <form action="{{ url_for('user_page') }}" method="get">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
@@ -26,7 +26,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" value="pass" name="pass">
+                        <input type="password" class="form-control" id="exampleInputPassword1" name="pass">
                     </div>
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -34,9 +34,9 @@
                     </div>
                     <div class="d-flex justify-content-center p-2">
 
-                        <button type="submit" class="btn btn-primary d-flex mr-5">login</button>
+                        <button type="submit" class="btn btn-white btn-outline-dark">login</button>
 
-                        <a href="{{ url_for('user_login') }}" class="btn btn-dark">register</a>
+
 
                     </div>
                 </form>
